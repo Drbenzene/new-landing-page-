@@ -1105,7 +1105,6 @@ header .container-fluid {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  height: "600px";
 }
 /* about v3 */
 .about-area-v3 .about-img-box {

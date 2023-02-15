@@ -177,6 +177,13 @@ function joinWaitingList() {
       'Content-Type': 'application/json',
     },
   })
+
+  swal({
+    icon: 'info',
+    text: 'Processing! Please wait',
+    buttons: false,
+    timer: 2000,
+  })
     .then((response) => {
       document.getElementById('emailsubscribe').value = ''
       swal({
