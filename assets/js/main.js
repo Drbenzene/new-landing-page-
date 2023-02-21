@@ -114,16 +114,22 @@ function subscribeEmail() {
       'Content-Type': 'application/json',
     },
   })
+
+  swal({
+    icon: 'info',
+    text: 'Processing! Please wait.',
+    buttons: false,
+    timer: 2000,
+  })
     .then((response) => {
       document.getElementById('emailsubscribe').value = ''
       swal({
         icon: 'success',
         text: 'Email subscribed successfully.',
         buttons: false,
-        timer: 2000,
+        timer: 5000,
       })
       document.getElementById('emailsubscribe').value = ''
-      console.log(response)
     })
 
     .catch((error) => {
